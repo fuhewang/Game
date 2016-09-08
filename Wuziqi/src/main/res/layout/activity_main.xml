@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <com.wangfuhe.wfh.myproject.WuziqiPanlAI
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/wuziqi_panlAI"
+        android:visibility="gone"/>
+    <com.wangfuhe.wfh.myproject.WuziqiPanl
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/wuziqi_panl"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人机大战"
+        android:id="@+id/AI_btn"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人人大战"
+        android:id="@+id/nor_btn"
+        android:layout_toRightOf="@id/AI_btn"
+        android:layout_alignBottom="@id/AI_btn"
+        />
+
+</RelativeLayout>
